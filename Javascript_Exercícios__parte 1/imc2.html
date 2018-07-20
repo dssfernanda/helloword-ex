@@ -1,0 +1,27 @@
+<script>
+var pulaLinha = function () {
+document .write( "<br>" );
+};
+var mostra = function (frase) {
+document .write(frase); pulaLinha();
+};
+
+	var calculaIMC = function (altura, peso) {
+	var imc = peso / (altura * altura); 
+	return imc;
+	};
+		
+		var nome = prompt("Bom dia! Qual e o seu nome? "); 
+		var alturaDoUsuario = prompt( " Olá " + nome + " e qual é a sua altura?" );
+		var pesoDoUsuario = prompt( "E o seu peso?" );
+			var imcDoUsuario = calculaIMC(alturaDoUsuario, pesoDoUsuario);
+			mostra( "O seu imc é " + imcDoUsuario); //DEU BUG NA HORA DE APRESENTAR ESSE RESULTADO
+
+
+		//var peso = 75;
+		//var altura = 1.72;
+		//var imc = calculaIMC(altura, peso);
+		//mostra( "Meu imc é " + imc); 
+		//mostra( "Ainda estou " + (imc - 18.5) + " pontos acima do limite da magreza." );
+</script>
+
